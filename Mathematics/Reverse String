@@ -1,0 +1,48 @@
+public class MyClass {
+    
+  
+// Method - 1 :
+  
+  static String reverse(String str) {
+        
+        String rev = "";
+        int n = str.length();
+        
+        for(int i = n-1; i >= 0;i--){
+            rev += str.charAt(i);
+        }
+        
+        return rev;
+    }
+
+
+// Method - 2 :
+  
+  
+   static String reverse(String str){
+
+        String rev = "";
+        char arr[] = str.toCharArray();
+        int n = arr.length;
+        
+        for(int i = n-1; i >= 0;i--){
+            rev += arr[i];
+        }
+        
+        return rev;
+     
+   } 
+
+
+ // Method - 3 :
+  
+
+   static String reverse(String str) {
+     
+        StringBuffer sb = new StringBuffer(str);
+     
+        return sb.reverse().toString();
+        
+   }
+  
+}
